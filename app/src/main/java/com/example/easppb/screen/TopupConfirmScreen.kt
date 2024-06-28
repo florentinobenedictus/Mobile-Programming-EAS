@@ -97,7 +97,7 @@ fun TopupConfirmScreen(navController: NavController, email: String, nama: String
 
                     val newBalanceString = newBalance.toString()
 
-                    navController.navigate(Screen.HomeScreen.withArgs(email, nama, namaToko, newBalanceString))
+                    navController.navigate(Screen.TopupSuccessScreen.withArgs(email, nama, namaToko, newBalanceString))
                 },
                 modifier = Modifier
                     .fillMaxWidth()

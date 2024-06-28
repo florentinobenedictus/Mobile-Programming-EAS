@@ -58,6 +58,8 @@ fun TopupSuccessScreen(navController: NavController, email: String, nama: String
                 .padding(paddingValues)
                 .padding(16.dp)
         ) {
+            Spacer(modifier = Modifier.height(64.dp))
+
             Column(
                 modifier = Modifier
                     .padding(16.dp)
@@ -67,7 +69,11 @@ fun TopupSuccessScreen(navController: NavController, email: String, nama: String
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.icon_checkmark),
-                    contentDescription = "Checkmark Icon"
+                    contentDescription = "Checkmark Icon",
+                    modifier = Modifier
+                        .fillMaxWidth(0.7f)
+                        .aspectRatio(1f)
+                        .align(Alignment.CenterHorizontally)
                 )
 
                 Spacer(modifier = Modifier.height(32.dp))
